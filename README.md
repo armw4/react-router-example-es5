@@ -47,6 +47,16 @@ open http://localhost:3000
 
 Now start clicking around on the links and watch the SPA do it's thing.
 
+#### The server wildcard/catch all route is a thing
+
+If you decided to server your app from an actual web server, you'll need a catch all route
+for the purposes of deep linking. For example, I shouldn't have to hit the index route in order to access the app.
+It should load an arbitrary, route, so long as it's valid and the user can access it, no matter how the user gets
+to that route (i.e. I could manually type the route in my address bar, or click a link from an email). This is pretty
+simple to configure in node as I've done in `app.js`. You'll want to do the same in the framework of your choosing.
+This works because the browser will always download a copy of your app from the server, *then* trigger any client side
+route handlers you have configured (and in that order :wink:).
+
 #### Where's the magic happening?
 
 The app itself lives inside `public/index.html`. It's here that react, history, react-router, etc. is initialized. Our components and routing configuration
