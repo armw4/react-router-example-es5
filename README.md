@@ -29,9 +29,8 @@ started with plain old JavaScript. How does this work?
 #### 3. You have the right to JSX
 
 Now babel will compile your code to vanilla JS for you all within the context of the browser. No server step is necessary here.
-Why would you want to do this? If you're not familiar with node and don't have the will or time to set it up, you'll want to bypass `npm`, etc.
-and get something cooked up really fast (i.e. Julia G).
-
+Why would you want to do this? If you're not familiar with node and don't have the desire or time to set it up, you'll want to bypass `npm`, etc.
+and get something cooked up really fast.
 
 The server in this repository still leverages node to serve the index page, but this was purely optional. You could open `public/index.html` directly
 in your browser and the code should still work.
@@ -42,7 +41,7 @@ in your browser and the code should still work.
 git clone https://github.com/armw4/react-router-example-es5.git
 cd react-router-example-es5
 npm install
-npm start
+npm start &
 open http://localhost:3000
 ```
 
